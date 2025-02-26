@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">CarGoShare</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="benvenuto">Benvenuto in CarGoShare!</string>
+    <string name="login">Login</string>
+    <string name="registrazione">Registrazione</string>
+    <string name="inserisci_registrazione">Inserisci i dati necessari per la registrazione:</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="indirizzo">Indirizzo</string>
+    <string name="cap">CAP</string>
+    <string name="città">Città</string>
+    <string name="telefono">Telefono</string>
+    <string name="salva">Salva</string>
+    <string name="account">Account</string>
+    <string name="preferiti">Preferiti</string>
+    <string name="ricerca">Ricerca</string>
+    <string name="chiave">Chiave</string>
+    <string name="prenotazioni">Prenotazioni</string>
+    <string name="profilo">Profilo</string>
+    <string name="pagamento">Pagamento</string>
+    <string name="fatture">Le mie fatture</string>
+    <string name="modifica">Modifica</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="inserisci">Inserisci</string>
+
+
+
+    <string name="ricerca_macchina">Prenota la macchina che fa al caso tuo</string>
+    <string name="targa">Targa  </string>
+    <string name="anno_car">Anno  </string>
+    <string name="map_id">6feaf99cfb246522</string>
+    <string name="data_fattura">Data</string>
+    <string name="prezzo">Prezzo</string>
+    <string name="descrizione">Descrizione</string>
+    <string name="prenotazione">ID</string>
+    <string name="prenotazione_avvenuta">Prenotazione effettuata con successo!\nPuoi sbloccare ora la macchina.\nSe desideri, puoi farla in seguito su "Key"</string>
+    <string name="button_sblocco">Sblocca ora</string>
+    <string name="button_sblocco2">Sblocca</string>
+    <string name="corsa_avviata">Corsa Avviata</string>
+    <string name="button_blocco">Termina Corsa</string>
+    <string name="corsa_conclusa">CORSA CONCLUSA</string>
+    <string name="segnalazione">Hai qualcosa da segnalare?</string>
+    <string name="sblocco_key">Inserisci l\'Id della tua prenotazione\nper sbloccare la macchina:</string>
+    <string name="blocca">Blocca</string>
+    <string name="chiudi">Chiudi</string>
+    <string name="durata">durata corsa:</string>
+    <string name="prezzo_fin">totale prezzo:</string>
+    <string name="password_key">Inserisci la tua password:</string>
+    <string name="continua">Vai al login</string>
+
+    <string name="dialog_registr">Inserisci carta</string>
+
+
+    <string name="modifica_profilo">Inserisci le modifiche che desideri apportare:</string>
+    <string name="inserisci_carta">Inserisci di seguito i dati relativi alla carta di credito:</string>
+    <string name="nome_titolare">Nome titolare</string>
+    <string name="scadenza_carta">Data scadenza</string>
+    <string name="numero_carta">Numero carta</string>
+    <string name="codice_carta">CVV</string>
+
+    <string name="conferma_registrazione">Registrazione avvenuta con successo!</string>
+    <string name="conferma_registr2">Vai allo step successivo!</string>
+    <string name="conferma_modifica">Modifica avvenuta con successo!</string>
+    <string name="dialog_modifica">Torna al profilo</string>
+    <string name="conferma_daticarta">I dati relativi al pagamento sono stati memorizzati correttamente!</string>
+    <string name="annulla">Annulla</string>
+    <string name="fattura_registrata">Fattura registrata in data:</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="domanda_1">Come posso trovare le macchine disponibili per la prenotazione?</string>
+    <string name="risposta_1">Nell\'app CargoShare, puoi cercare le macchine disponibili nella sezione "Ricerca", selezionando data e orario
+    in cui desideri prenotare l\'auto e utilizzare la mappa interattiva per visualizzare la posizione delle macchine disponibili nelle vicinanze.</string>
+    <string name="domanda_2"> Come posso visualizzare le mie prenotazioni?</string>
+    <string name="risposta_2">Accedi al tuo account su CargoShare e vai alla sezione "Prenotazioni" per
+    visualizzare le prenotazioni attive e le relative informazioni.</string>
+    <string name="domanda_3">Come funziona il pagamento?</string>
+    <string name="risposta_3">Nell\'app CargoShare, vai alla sezione "Pagamento" e
+    segui le istruzioni per completare l\'aggiunta della carta di credito al tuo account. Al termine della corsa viene mostrata la conferma di transazione effettuata.</string>
+    <string name="domanda_4">Come posso visualizzare le mie fatture precedenti?</string>
+    <string name="risposta_4">Vai alla sezione "Fatture" per visualizzare le tue
+    fatture precedenti. Qui troverai un elenco delle transazioni passate e le relative fatture.</string>
+    <string name="domanda_5"> È possibile annullare una prenotazione?</string>
+    <string name="risposta_5">Vai alla sezione "Prenotazioni" per visualizzare le prenotazioni effettuate. Qui troverai un tasto apposito per la cancellazione.
+</string>
+    <string name="domanda_6">Come posso avviare la corsa per l\'auto che ho prenotato?</string><string name="risposta_6">Vai alla sezione "Chiave" ed, inserendo la password relativa al tuo account, potrai avviare la corsa ed interromperla in qualsiasi momento.</string>
+
+
+
+</resources>

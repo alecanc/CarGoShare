@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:title="Account"
+            android:icon="@drawable/user"
+            android:id="@+id/navigation_user"/>
+        <item
+            android:icon="@drawable/credit_card"
+            android:title="Pagamento"
+            android:id="@+id/navigation_pagamento"/>
+
+        <item android:title="Le mie fatture"
+            android:icon="@drawable/file_invoice_dollar"
+            android:id="@+id/navigation_fatture"/>
+
+        <item android:title="Settings"
+            android:icon="@drawable/settings"
+            android:id="@+id/navigation_settings" />
+
+        <item android:title="About"
+            android:icon="@drawable/interrogation"
+            android:id="@+id/navigation_about"/>
+    </group>
+    <group>
+        <item android:title="Logout"
+            android:icon="@drawable/sign_out_alt__1_"
+            android:id="@+id/logout"/>
+    </group>
+
+
+</menu>

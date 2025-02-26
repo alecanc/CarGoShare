@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#505DB3"
+    android:orientation="vertical"
+    tools:context=".Profilo.Pagamento">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/sfondoarrow"
+        android:clickable="true"
+        app:srcCompat="@drawable/backarrow"
+        app:tint="#673AB7" />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:padding="15dp"
+        android:text="@string/inserisci_carta"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/custom_editext"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <EditText
+            android:id="@+id/nomeTitolare"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="#194F588F"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:padding="7dp"
+            android:hint="@string/nome_titolare"
+            android:textAlignment="viewStart" />
+
+
+
+        <EditText
+            android:id="@+id/numeroCarta"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="#194F588F"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:maxEms="16"
+            android:hint="@string/numero_carta"
+            android:padding="7dp" />
+
+        <EditText
+            android:id="@+id/dataScadenza"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="#194F588F"
+            android:ems="4"
+            android:hint="@string/scadenza_carta"
+            android:gravity="center_vertical"
+            android:inputType="date"
+            android:padding="7dp" />
+
+        <EditText
+            android:id="@+id/codiceCarta"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="#194F588F"
+            android:ems="3"
+            android:fontFamily="@font/poppins"
+            android:inputType="number"
+            android:padding="5dp"
+            android:hint="@string/codice_carta"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/salvaCarta"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/poppins"
+        android:gravity="center|center_vertical"
+        android:paddingLeft="7dp"
+        android:paddingTop="7dp"
+        android:paddingRight="7dp"
+        android:text="@string/salva"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:rippleColor="@color/white" />
+
+</LinearLayout>
+

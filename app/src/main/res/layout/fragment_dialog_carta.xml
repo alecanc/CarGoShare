@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cartaView">
+
+    <LinearLayout
+        android:id="@+id/firstLinear"
+        android:layout_width="435dp"
+        android:layout_height="291dp"
+        android:backgroundTint="#505DB3"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editnomeTitolare"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="#194F588F"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:hint="@string/nome_titolare"
+            android:padding="7dp"
+            android:textAlignment="viewStart" />
+
+
+        <EditText
+            android:id="@+id/editnumeroCarta"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="#194F588F"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/numero_carta"
+            android:inputType="number"
+            android:maxEms="16"
+            android:padding="7dp" />
+
+        <EditText
+            android:id="@+id/editdataScadenza"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="#194F588F"
+            android:ems="4"
+            android:gravity="center_vertical"
+            android:hint="@string/scadenza_carta"
+            android:inputType="date"
+            android:padding="7dp" />
+
+        <EditText
+            android:id="@+id/editcodiceCarta"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/textshape"
+            android:backgroundTint="#194F588F"
+            android:ems="3"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/codice_carta"
+            android:inputType="number"
+            android:padding="5dp"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_background"
+        android:padding="8dp"
+        android:src="@drawable/check"
+        app:layout_constraintBottom_toTopOf="@id/firstLinear"
+        app:layout_constraintEnd_toEndOf="@id/firstLinear"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/firstLinear"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/inserisciCarta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background"
+        android:text="@string/inserisci"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/firstLinear"
+        app:layout_constraintEnd_toEndOf="@id/firstLinear"
+        app:layout_constraintStart_toStartOf="@id/firstLinear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

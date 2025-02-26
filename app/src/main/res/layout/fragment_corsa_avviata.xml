@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ricerca.CorsaAvviataFrag"
+    android:id="@+id/corsa_avviata"
+    android:background="@drawable/im">
+
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.cargoshare.Ricerca.FatturaAvvenutaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="230dp"
+            android:background="@drawable/custom_editext"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/poppins"
+                android:shadowColor="#611FB1"
+                android:shadowRadius="20"
+                android:text="Corsa avviata"
+                android:textColor="@color/purple_700"
+                android:textSize="30dp"
+
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/orarioText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/poppins"
+                android:shadowColor="#611FB1"
+                android:shadowRadius="20"
+                android:textColor="@color/purple_700"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                tools:text="00:00:00"></TextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Blocca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="#773EBD"
+                android:fontFamily="@font/poppins"
+                android:paddingStart="7dp"
+                android:paddingLeft="8dp"
+
+                android:paddingEnd="7dp"
+
+
+                android:paddingRight="8dp"
+                android:text="@string/blocca"
+                android:textAllCaps="false"
+                android:textColor="#D4C4E6"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.938"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.302">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

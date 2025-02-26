@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".Autenticazione.Registrazione"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sfondo1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/sfondoarrow"
+            android:clickable="true"
+            app:srcCompat="@drawable/backarrow"
+            app:tint="#673AB7" />
+
+
+        <TextView
+            android:id="@+id/inserisci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:padding="15dp"
+            android:text="@string/inserisci_registrazione"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/custom_editext"
+            android:gravity="center_vertical"
+
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/registerNome"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/textshape"
+                android:backgroundTint="#194F588F"
+                android:inputType="textCapSentences"
+                android:drawableEnd="@drawable/pencil"
+                android:fontFamily="@font/poppins"
+                android:gravity="top|center"
+                android:padding="7dp"
+                android:hint="@string/nome"
+                android:textAlignment="viewStart"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registerCognome"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:inputType="textCapSentences"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/textshape"
+                android:backgroundTint="#194F588F"
+                android:drawableEnd="@drawable/pencil"
+                android:fontFamily="@font/poppins"
+                android:padding="7dp"
+                android:hint="@string/cognome"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registerEmail"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/textshape"
+                android:backgroundTint="#194F588F"
+                android:drawableEnd="@drawable/pencil"
+                android:fontFamily="@font/poppins"
+                android:padding="7dp"
+                android:hint="@string/email"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/registerPassword"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:minEms="8"
+                android:maxEms="15"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/textshape"
+                android:backgroundTint="#194F588F"
+                android:drawableEnd="@drawable/pencil"
+                android:ems="16"
+                android:maxLength="16"
+                android:inputType="textPassword"
+                android:padding="7dp"
+                android:hint="@string/password" />
+
+            <EditText
+                android:id="@+id/registerAddress"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/textshape"
+                android:backgroundTint="#194F588F"
+                android:drawableEnd="@drawable/pencil"
+                android:fontFamily="@font/poppins"
+                android:padding="7dp"
+                android:inputType="textCapSentences"
+                android:hint="@string/indirizzo"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="18dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/registerCitta"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textshape"
+                    android:backgroundTint="#194F588F"
+                    android:drawableEnd="@drawable/pencil"
+                    android:fontFamily="@font/poppins"
+                    android:padding="5dp"
+                    android:inputType="textCapSentences"
+                    android:hint="@string/città"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/registerCap"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/textshape"
+                    android:backgroundTint="#194F588F"
+                    android:drawableEnd="@drawable/pencil"
+                    android:fontFamily="@font/poppins"
+                    android:padding="5dp"
+                    android:maxEms="5"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:hint="@string/cap"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/registerNumero"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/textshape"
+                android:backgroundTint="#194F588F"
+                android:inputType="number"
+                android:drawableEnd="@drawable/pencil"
+                android:fontFamily="@font/poppins"
+                android:padding="7dp"
+                android:maxLength="10"
+                android:maxEms="10"
+                android:hint="@string/telefono"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/salvaButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center|center_vertical"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/poppins"
+            android:gravity="center|center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="7dp"
+            android:paddingTop="7dp"
+            android:paddingRight="7dp"
+            android:text="@string/salva"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:rippleColor="@color/white" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

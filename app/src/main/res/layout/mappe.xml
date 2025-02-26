@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ricerca.Mappe"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map1"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        map:layout_constraintBottom_toBottomOf="parent"
+
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0"
+        map:mapId="@string/map_id">
+
+
+    </com.google.android.gms.maps.MapView>
+
+    <ImageButton
+        android:id="@+id/backMap"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30sp"
+        android:layout_marginEnd="341dp"
+        android:background="@drawable/sfondoarrow"
+        app:srcCompat="@drawable/backarrow"
+        app:tint="#673AB7"
+
+        map:layout_constraintBottom_toBottomOf="@+id/map1"
+        map:layout_constraintEnd_toEndOf="@+id/map1"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/btnMarker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+android:layout_marginStart="30dp"
+
+        android:visibility="gone"
+        android:background="@drawable/up2"
+        map:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="40dp"
+        map:layout_constraintBottom_toBottomOf="@+id/map1" />
+
+    <ImageButton
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        android:id="@+id/listaBtn"
+        android:background="@drawable/list"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.046"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/backMap"
+        map:layout_constraintVertical_bias="0.211"></ImageButton>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerView2"
+        android:name="com.example.cargoshare.CarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        map:layout_constraintBottom_toBottomOf="parent"
+        tools:layout="@layout/fragment_car" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
